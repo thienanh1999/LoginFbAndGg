@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jinny.loginfbandgg.MainActivity">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:id="@+id/iv_fb_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_below="@+id/fb_login_button"/>
+
+    <TextView
+        android:id="@+id/tv_fb_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_below="@+id/iv_fb_avatar"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gg_login_button"
+        android:layout_below="@+id/tv_fb_name"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_gg_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gg_login_button"
+        android:padding="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gg_name"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_below="@+id/iv_gg_avatar"/>
+
+</RelativeLayout>
